@@ -14,6 +14,8 @@ function bodyValidator(keys: string): RequestHandler {
       if (!req.body[key]) {
         res.status(422).send('Invalid Request');
         console.log('hello1');
+        console.log('hello1');
+        console.log('hello1');
         return;
       }
     }
