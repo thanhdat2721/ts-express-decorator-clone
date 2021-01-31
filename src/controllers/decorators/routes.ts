@@ -3,6 +3,8 @@ import { Methods } from './method';
 import { MetadataKeys } from './MetadataKeys';
 
 function routeBinder(method: String) {
+  console.log('hello1');
+  console.log('hello1');
   return function (path: string) {
     return function (target: any, key: string, desc: PropertyDescriptor) {
       Reflect.defineMetadata(MetadataKeys.path, path, target, key);
