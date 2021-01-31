@@ -13,6 +13,7 @@ function bodyValidator(keys: string): RequestHandler {
     for (let key of keys) {
       if (!req.body[key]) {
         res.status(422).send('Invalid Request');
+        console.log('hello1');
         return;
       }
     }
